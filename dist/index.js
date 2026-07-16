@@ -1,5 +1,25 @@
-"use strict";var i=function(e,r){return function(){try{return r||e((r={exports:{}}).exports,r),r.exports}catch(u){throw (r=0, u)}};};var n=i(function(c,t){
-var s=require('@stdlib/ml-base-sgd-classification-loss-function-enum2str/dist'),o=require('@stdlib/ml-base-sgd-classification-loss-function-str2enum/dist');function f(e){var r=typeof e;return r==="string"?o(e)===null?null:e:r==="number"?s(e):null}t.exports=f
-});var l=n();module.exports=l;
 /** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
+
+'use strict';
+
+/**
+* Return the loss function string associated with a supported SGD classification loss function value.
+*
+* @module @stdlib/ml-base-sgd-classification-loss-function-resolve-str
+*
+* @example
+* var str2enum = require( '@stdlib/ml-base-sgd-classification-loss-function-str2enum' );
+* var resolve = require( '@stdlib/ml-base-sgd-classification-loss-function-resolve-str' );
+*
+* var v = resolve( str2enum( 'hinge' ) );
+* // returns 'hinge'
+*/
+
+// MODULES //
+
+var main = require( './main.js' );
+
+
+// EXPORTS //
+
+module.exports = main;
